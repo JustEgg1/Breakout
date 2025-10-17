@@ -32,4 +32,10 @@ fire ball (green)
 * Implement commentary with calls to an LLM such as LLama
 
 # Time Details and Changelist
+
+Change 1 - Fixed circular dependency preventing game from running (10 mins)
+Change 2 - Familiarising myself with paddle movement code and adding mouse movement (35 mins)
+
+
+
 <Add information to this section about the time you've taken for this task along with a professional changelist.>

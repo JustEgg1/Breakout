@@ -81,6 +81,10 @@ void GameManager::update(float dt)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) _paddle->moveRight(dt);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) _paddle->moveLeft(dt);
 
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) _paddle->moveLeft(dt);
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Right)) _paddle->moveRight(dt);
+
+
     // update everything 
     _paddle->update(dt);
     _ball->update(dt);
@@ -91,6 +95,8 @@ void GameManager::loseLife()
 {
     _lives--;
     _ui->lifeLost(_lives);
+    
+    
 
     // TODO screen shake.
 }
